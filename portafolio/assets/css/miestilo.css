@@ -1,0 +1,482 @@
+.progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 20px;
+}
+.progress{
+    height: 20px;
+    background: #d4d7e6;
+    border-radius: 30px;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+.progress .progress-bar{
+    border-radius: 30px;
+    box-shadow: none;
+    position: relative;
+    animation: animate-positive 2s;
+}
+.progress .progress-bar:before{
+    content: "";
+    width: 100%;
+    height: 50%;
+    background: rgba(0,0,0,0.3);
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.progress .progress-bar:after{
+    content: "";
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #cbcbcb;
+    border: 8px solid #000;
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    z-index: 1;
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
+/*modal*/
+.modal-fondo{
+  background-color: #fff !important;
+  border-bottom: #000 solid 1px;
+}
+.futer-modal{
+  background-color: #fff !important;
+  border-top: #000 solid 1px;
+}
+.boton{
+  padding: 15px 35px;
+  background-color: #dbd7f7;
+  color: #000;
+  font-size: 25px;
+  font-family: 'Itim', cursive;
+  border-radius: 50px;
+  border: solid 4px #a89bff ;
+}
+.boton:hover{
+  font-family: 'Itim', cursive;
+  padding: 15px 35px;
+  background-color: #a89bff;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 25px;
+  border: solid 4px #dbd7f7 ;
+}
+p{
+  font-family: 'Itim', cursive;
+}
+.modal-content {
+  background-color: #f6eaff;
+}
+
+
+h1{
+font-size:35px ;
+font-family: 'Itim', cursive;
+color: black;
+}
+h2{
+ font-family: 'Itim', cursive;
+  font-size:35px ;
+  color:#8B95CC
+}
+h3{
+  font-size:23px ;
+font-family: 'Itim', cursive;
+color: black;
+}
+
+body {
+    /*background-image: url('/wp-content/themes/portafolio/assets/img/reja-lila.png');*/
+    background-color:rgb(227, 209, 187);
+    background-image: url('/wp-content/themes/portafolio/assets/img/fondobeige.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+.reja{
+  background-image: url('/wp-content/themes/portafolio/assets/img/reja3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: contain;
+ 
+}
+
+.button-n {
+  position: relative;
+  border: none;
+  color: #e8e8e8;
+  background: #333333;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Yomogi', cursive !important;
+  text-transform: uppercase;
+  height: 100px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0,0.2);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button-n .span {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition-delay: 0.6s;
+  
+  
+}
+
+.button-n:hover .span:nth-child(1) {
+  transform: translateY(-100%);
+  transition-delay: 0s;
+}
+
+.button-n:hover .span:nth-child(2) {
+  transform: translateY(-100%);
+  transition-delay: 0s;
+}
+
+.button-n:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background:#8B95CC;
+  transform: scaleX(0);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition-delay: 0;
+  transform-origin: left;
+}
+
+.button-n:hover::before {
+  transform: scaleX(1);
+  transition-delay: 0.6s;
+}
+
+.button-n:active {
+  box-shadow: none;
+}
+
+
+
+/*skills*/
+.card {
+  width: 320px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #f36bd6;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  width: 120px;
+  font-size: 16px;
+  font-family: 'Itim', cursive;
+}
+
+.skill-level {
+  width: 160px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+  border: #333 solid 1px;
+}
+
+.skill-percent {
+  background-color: #ef8ad9;
+  height: 100%;
+  
+  }
+
+.skill-percent-number {
+  margin-left: 20px;
+  font-size: 16px;
+  padding-right: 5px;
+}
+/*rrss*/
+.social-links,.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Itim', cursive;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  background: white;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.social-btn svg {
+  height: 30px;
+  width: 30px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: start;
+  margin-left: 5px;
+}
+
+.social-btn:hover {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 190px;
+}
+
+#twitter svg {
+  fill: #1da1f2;
+}
+
+#linkedin svg {
+  fill: #0e76a8;
+}
+
+#github {
+  fill: #333;
+}
+
+
+
+
+
+/*UXUI */
+.uxui body{
+  background-color: #fff !important;
+}
+.mititulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ font-size: 70px;
+ font-family: 'Itim', cursive;
+ font-weight: 700;
+ color: white;
+/* -webkit-text-stroke:#2f2f2f 1px;*/
+ 
+
+} 
+.mititulo2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ font-size: 70px;
+ font-family: 'Itim', cursive;
+ font-weight: 700;
+ color: white;
+
+ 
+
+} 
+/*
+.portada1{
+  background-image: url('/wp-content/themes/portafolio/assets/img/portada1.png') !important;
+  background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+  height: 450px;
+}*/
+/*btn back*/
+.button-back {
+  height: 60px;
+  width: 100px;
+  background-color: #8B95CC;
+  border: 2px solid rgb(255, 255, 255);
+  color: #ffffff;
+  transition: .6s;
+  font-size: 15px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+  overflow: hidden;
+  font-family: 'Itim', cursive;
+ 
+  
+}
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+.button-back span {
+  transform: translateX(10px);
+  transition: .5s;
+  text-decoration: none;
+ 
+}
+
+.button-back svg {
+  transform: translateX(-300px);
+  transition: .6s;
+  z-index: 3;
+  height: 20px;
+}
+
+.button-back:hover {
+  width: 60px;
+  background-color: rgba(120, 85, 120, 0.815);
+  box-shadow: 20px 20px 96px #bebebe,-20px -20px 96px #ffffff;
+}
+
+.button-back:hover svg {
+  transform: translateX(-5px);
+}
+
+.button-back:hover span {
+  transform: translateY(70px);
+  font-size: .1rem;
+  text-decoration: none;
+}
+
+/*boton demo*/
+.demo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  color: rgb(37, 37, 37);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  font-family: 'Itim', cursive;
+}
+
+.demo:hover {
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
+}
+
+.demo:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hoverEffect div {
+  background: rgb(222,0,75);
+  background: linear-gradient(90deg, rgba(222,0,75,1) 0%, rgba(191,70,255,1) 49%, rgba(0,212,255,1) 100%);
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+.demo:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*
+
+
+.pestaña1{
+ background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 480px;
+  width: 490px;
+  border-radius: 40px;
+  border:#000000 solid 4px
+ 
+  
+}*/
+.bio{
+  background-image: url('/wp-content/themes/portafolio/assets/img/ventana-rosa.png') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+width: 450px;
+height: 350px;
+}
+.parrafo1{
+  font-size: 13px;
+  font-family: 'Itim', cursive;
+}
+footer{
+  font-size: 15px;
+  background-color: #918ACE;
+  color: #000000;
+ 
+}
